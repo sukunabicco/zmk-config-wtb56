@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: wtb56
+name: wtb56
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - wtb56_left
+  - wtb56_right

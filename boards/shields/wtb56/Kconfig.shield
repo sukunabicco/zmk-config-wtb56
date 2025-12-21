@@ -1,0 +1,4 @@
+config SHIELD_WTB56_LEFT
+    def_bool $(shields_list_contains,wtb56_left)
+config SHIELD_WTB56_RIGHT
+    def_bool $(shields_list_contains,wtb56_right)
