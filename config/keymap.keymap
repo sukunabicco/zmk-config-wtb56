@@ -28,11 +28,11 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans  &trans  &trans  &trans                  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp LEFT_ALT    &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp DOWN_ARROW  &trans     &trans  &trans
+&trans  &trans                  &trans  &trans  &trans  &trans                                     &trans  &trans
             >;
         };
 
