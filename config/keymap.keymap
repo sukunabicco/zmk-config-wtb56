@@ -9,11 +9,11 @@
 
         DEFAULT {
             bindings = <
-&kp ESC            &kp N1        &kp N2  &kp N3  &kp N4       &kp N5       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0           &kp PRINTSCREEN
-&kp TAB            &kp Q         &kp W   &kp E   &kp R        &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P            &kp LA(BACKSPACE)
-&kp LEFT_SHIFT     &kp A         &kp S   &kp D   &kp F        &kp G        &kp H      &kp J          &kp K      &kp L    &kp MINUS        &kp RIGHT_SHIFT
-&kp LCTRL          &kp Z         &kp X   &kp C   &kp V        &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp RIGHT_ALT    &kp RCTRL
-&kp LANG_KATAKANA  &kp LEFT_WIN                  &lt 1 SPACE  &lt 2 SPACE  &kp ENTER  &kp BACKSPACE                      &lt 3 RIGHT_ALT  &kp LANGUAGE_2
+&kp ESC           &kp N1            &kp N2  &kp N3  &kp N4       &kp N5       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0         &kp LS(LG(S))
+&kp TAB           &kp Q             &kp W   &kp E   &kp R        &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P          &kp LA(BACKSPACE)
+&kp LEFT_SHIFT    &kp A             &kp S   &kp D   &kp F        &kp G        &kp H      &kp J          &kp K      &kp L    &kp MINUS      &kp RIGHT_SHIFT
+&kp LCTRL         &kp Z             &kp X   &kp C   &kp V        &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp RIGHT_ALT  &kp RCTRL
+&lt 1 LANGUAGE_2  &lt 2 LANGUAGE_3                  &lt 1 SPACE  &lt 2 SPACE  &kp ENTER  &kp BACKSPACE                      &lt 3 GRAVE    &kp LEFT_WIN
             >;
         };
 
@@ -29,11 +29,11 @@
 
         ARROW {
             bindings = <
-&trans  &none   &none        &none         &none          &none   &none   &none           &none           &none      &none   &trans
-&trans  &none   &none        &kp HOME      &kp PAGE_UP    &none   &none   &none           &kp UP_ARROW    &none      &none   &trans
-&trans  &none   &kp LS(TAB)  &kp LEFT_ALT  &kp TAB        &none   &none   &kp LEFT_ARROW  &kp RIGHT_ALT   &kp RIGHT  &none   &trans
-&trans  &none   &none        &kp END       &kp PAGE_DOWN  &none   &none   &none           &kp DOWN_ARROW  &none      &none   &trans
-&trans  &trans                             &trans         &trans  &trans  &trans                                     &trans  &trans
+&trans  &none   &none  &none  &none     &none     &none        &none           &none           &none          &none    &trans
+&trans  &none   &none  &none  &none     &none     &none        &kp HOME        &kp UP_ARROW    &kp PAGE_UP    &none    &trans
+&trans  &none   &none  &none  &none     &none     &kp LS(TAB)  &kp LEFT_ARROW  &kp RIGHT_ALT   &kp RIGHT      &kp TAB  &trans
+&trans  &none   &none  &none  &none     &none     &none        &kp END         &kp DOWN_ARROW  &kp PAGE_DOWN  &none    &trans
+&trans  &trans                &mkp MB1  &mkp MB2  &mkp MB4     &mkp MB5                                       &trans   &trans
             >;
         };
 
