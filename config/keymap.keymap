@@ -22,7 +22,7 @@
 &trans  &kp EXCL      &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR            &kp PERCENT            &kp AMPERSAND   &kp PIPE          &kp EQUAL      &kp UNDERSCORE        &kp TILDE  &kp INS
 &trans  &kp QUESTION  &kp SINGLE_QUOTE   &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp SEMICOLON  &kp COLON             &kp MINUS  &trans
 &trans  &kp PIPE      &kp GRAVE          &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp SLASH      &kp NON_US_BACKSLASH  &kp AT     &trans
-&trans  &trans                                         &trans                &trans                 &mkp MB1        &mkp MB2                                               &trans     &trans
+&trans  &trans                                         &mkp MB1              &mkp MB2               &mkp MB4        &mkp MB5                                               &trans     &trans
             >;
         };
 
@@ -43,16 +43,6 @@
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none                &none  &none  &none  &none                &none  &none
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans  &trans  &trans  &trans                  &trans  &trans
             >;
         };
     };
