@@ -21,7 +21,7 @@
         FUNCTION {
             bindings = <
 &trans  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp F12
-&trans  &kp N1       &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC  &kp JP_AMPR  &kp JP_PIPE  &kp JP_EQL   &kp JP_UNDS  &kp JP_TILD  &kp INS
+&trans  &kp JP_EXLM  &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC  &kp JP_AMPR  &kp JP_PIPE  &kp JP_EQL   &kp JP_UNDS  &kp JP_TILD  &kp INS
 &trans  &kp JP_QUES  &kp JP_QUOT  &kp JP_PLUS  &kp JP_LPRN  &kp JP_RPRN  &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_MINS  &trans
 &trans  &kp JP_PIPE  &kp JP_GRV   &kp JP_ASTR  &kp JP_LBKT  &kp JP_RBKT  &kp JP_LT    &kp JP_GT    &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT    &trans
 &trans  &trans                                 &mkp MB1     &mkp MB2     &mkp MB4     &mkp MB5                               &trans       &trans
