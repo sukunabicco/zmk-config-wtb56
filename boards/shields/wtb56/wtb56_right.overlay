@@ -85,7 +85,7 @@
         status = "okay";
         input-processors = <
             &zip_xy_transform (0)
-            &trackball_scaler 1 2
+            &trackball_scaler 1 4
             &zip_xy_to_scroll_mapper
         >;
     };
