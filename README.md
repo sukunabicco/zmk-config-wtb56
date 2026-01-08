@@ -112,7 +112,7 @@ WTB56/
 │           ├── wtb56_right.overlay   # 右側デバイスツリー
 │           └── layouts.dtsi          # 物理レイアウト定義
 ├── config/
-│   ├── keymap.keymap                 # キーマップ設定
+│   ├── wtb56.keymap                 # キーマップ設定
 │   ├── west.yml                      # West依存関係
 │   ├── info.json                     # キーボード情報
 │   └── locale/
@@ -283,7 +283,7 @@ WTB56/
 2. 接続中にBOOTパッドをショート、またはブートローダーキーを押す
 3. GitHub Actionsで自動ビルドされたファームウェア（UF2）を書き込み
 4. すべてのキーとトラックボールをテスト
-5. 必要に応じて`config/keymap.keymap`をカスタマイズ
+5. 必要に応じて`config/wtb56.keymap`をカスタマイズ
 
 ---
 
@@ -321,7 +321,7 @@ WTB56/
 - タップ/ホールド動作
 - Bluetooth設定
 
-`config/keymap.keymap`を編集し、GitHubにプッシュすると自動でファームウェアがビルドされます。
+`config/wtb56.keymap`を編集し、GitHubにプッシュすると自動でファームウェアがビルドされます。
 
 ### ケースの改造
 
