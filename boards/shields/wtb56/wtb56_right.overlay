@@ -52,19 +52,6 @@
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
 
-    trackball_behavior_listener: trackball_behavior_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&trackball>;
-        layers = <0 1 2 3>;
-        bindings = <&ib_tog_layer 4>;
-    };
-
-    ib_tog_layer: ib_tog_layer {
-        compatible = "zmk,input-behavior-tog-layer";
-        #binding-cells = <1>;
-        time-to-live-ms = <500>;
-    };
-
     trackball_scaler: trackball_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
