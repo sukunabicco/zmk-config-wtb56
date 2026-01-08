@@ -93,29 +93,39 @@
 
 ```
 WTB56/
-├── README.md                    # このファイル
-├── WTB56.json                   # Auto-KDK設計ファイル
-├── images/                      # プレビュー画像
+├── README.md                         # このファイル
+├── WTB56.json                        # Auto-KDK設計ファイル
+├── .github/
+│   └── workflows/
+│       └── build.yml                 # ZMKファームウェア自動ビルド
+├── boards/
+│   ├── arm/
+│   │   └── akdk_bt1/
+│   │       └── akdk_bt1.yml          # ボード定義
+│   └── shields/
+│       └── wtb56/
+│           ├── wtb56.keymap          # シールドキーマップ（config参照）
+│           ├── wtb56.zmk.yml         # ZMKシールド定義
+│           ├── wtb56_left.conf       # 左側設定
+│           ├── wtb56_left.overlay    # 左側デバイスツリー
+│           ├── wtb56_right.conf      # 右側設定
+│           ├── wtb56_right.overlay   # 右側デバイスツリー
+│           └── layouts.dtsi          # 物理レイアウト定義
+├── config/
+│   ├── keymap.keymap                 # キーマップ設定
+│   ├── west.yml                      # West依存関係
+│   ├── info.json                     # キーボード情報
+│   └── locale/
+│       └── keys_ja.h                 # 日本語キーボードレイアウト定義
+├── pcb/
+│   ├── WTB56-left-pcb.json           # 左側PCBデータ
+│   ├── WTB56-right-pcb.json          # 右側PCBデータ
+│   └── WTB56-panelized-pcb.json      # パネライズPCBデータ
+├── images/                           # プレビュー画像
 │   ├── WTB56-case-preview.png
 │   └── WTB56-top-view.png
-├── gerber/                      # PCB製造ファイル
-│   └── *.gbr                    # JLCPCB用Gerberファイル
-├── bom/                         # 部品表
-│   ├── BOM-WTB56.csv           # PCBA組み立て用
-│   └── PickAndPlace-WTB56.csv  # 部品配置データ
-├── case/                        # 3Dプリント用ケースファイル
-│   ├── WTB56-left-top-case.stl
-│   ├── WTB56-right-top-case.stl
-│   ├── WTB56-left-bottom-case.stl
-│   ├── WTB56-right-bottom-case.stl
-│   ├── WTB56-left-plate.stl
-│   └── WTB56-right-plate.stl
-├── foam/                        # ガスケットマウント用フォーム
-│   ├── WTB56-left-foam.svg     # レーザー加工サービス用
-│   └── WTB56-right-foam.svg    # レーザー加工サービス用
-└── firmware/                    # QMK/ZMKファームウェア
-    ├── keymap.c                # デフォルトキーマップ
-    └── config.h                # キーボード設定
+└── zephyr/
+    └── module.yml                    # Zephyrモジュール定義
 ```
 
 ---
@@ -270,10 +280,10 @@ WTB56/
 ### ステップ7: ファームウェア書き込み
 
 1. USB経由でキーボードを接続
-2. 接続中にBOOTパッドをショート、または`QK_BOOT`キーを押す
-3. `firmware/`フォルダからファームウェアを書き込み
+2. 接続中にBOOTパッドをショート、またはブートローダーキーを押す
+3. GitHub Actionsで自動ビルドされたファームウェア（UF2）を書き込み
 4. すべてのキーとトラックボールをテスト
-5. 必要に応じてキーマップをカスタマイズ
+5. 必要に応じて`config/keymap.keymap`をカスタマイズ
 
 ---
 
@@ -303,15 +313,15 @@ WTB56/
 
 ### ファームウェアカスタマイズ
 
-このキーボードはQMKファームウェアを使用しています。以下をカスタマイズ可能:
+このキーボードはZMKファームウェアを使用しています。以下をカスタマイズ可能:
 
 - キーマッピング
-- トラックボール感度
-- RGBライティング（取り付けた場合）
+- トラックボール感度・スクロール方向
 - マクロとレイヤー
 - タップ/ホールド動作
+- Bluetooth設定
 
-`firmware/`フォルダ内のファイルを編集してリビルドしてください。
+`config/keymap.keymap`を編集し、GitHubにプッシュすると自動でファームウェアがビルドされます。
 
 ### ケースの改造
 
