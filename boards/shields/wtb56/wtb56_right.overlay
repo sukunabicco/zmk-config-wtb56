@@ -51,7 +51,7 @@
         device = <&trackball>;
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &trackball_scaler 3 2
+            &trackball_scaler 3 4
         >;
     };
 
@@ -78,7 +78,7 @@
         status = "okay";
         input-processors = <
             &zip_xy_transform (0)
-            &trackball_scaler 1 16
+            &trackball_scaler 1 32
             &zip_xy_to_scroll_mapper
         >;
     };
